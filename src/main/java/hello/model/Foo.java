@@ -1,11 +1,15 @@
 package hello.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.Size;
 import java.io.Serializable;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Foo implements Serializable {
 
     private long id;
@@ -13,7 +17,7 @@ public class Foo implements Serializable {
     @Size(min = 5, max = 14)
     private String name;
 
-    public Foo() {
+/*    public Foo() {
         super();
     }
 
@@ -21,7 +25,7 @@ public class Foo implements Serializable {
         super();
 
         this.name = name;
-    }
+    }*/
 
     // API
 

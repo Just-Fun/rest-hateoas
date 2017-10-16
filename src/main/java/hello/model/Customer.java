@@ -2,10 +2,14 @@ package hello.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.hateoas.ResourceSupport;
 
 import java.util.Map;
 
+@Data
+@NoArgsConstructor
 @JsonInclude(Include.NON_NULL)
 public class Customer extends ResourceSupport {
     private String customerId;
@@ -13,9 +17,9 @@ public class Customer extends ResourceSupport {
     private String companyName;
     private Map<String, Order> orders;
 
-    public Customer() {
+  /*  public Customer() {
         super();
-    }
+    }*/
 
     public Customer(final String customerId, final String customerName, final String companyName) {
         super();
@@ -24,7 +28,7 @@ public class Customer extends ResourceSupport {
         this.companyName = companyName;
     }
 
-    public String getCustomerId() {
+   /* public String getCustomerId() {
         return customerId;
     }
 
@@ -54,6 +58,6 @@ public class Customer extends ResourceSupport {
 
     public void setOrders(final Map<String, Order> orders) {
         this.orders = orders;
-    }
+    }*/
 
 }
