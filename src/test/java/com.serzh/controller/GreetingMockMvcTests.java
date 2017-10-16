@@ -1,4 +1,4 @@
-package com.serzh;
+package com.serzh.controller;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,5 +23,11 @@ public class GreetingMockMvcTests {
     public void envEndpointNotHidden() throws Exception {
         mockMvc.perform(get("/greeting"))
             .andExpect(jsonPath("$.content").value("Hello, World!"));
+    }
+
+    @Test
+    public void envEndpointNotHidden2() throws Exception {
+        mockMvc.perform(get("/greeting?name=Chuck"))
+                .andExpect(jsonPath("$.content").value("Hello, Chuck!"));
     }
 }

@@ -1,4 +1,4 @@
-package com.serzh;
+package com.serzh.controller;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

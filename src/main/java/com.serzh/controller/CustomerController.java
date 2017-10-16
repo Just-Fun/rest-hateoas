@@ -53,7 +53,6 @@ public class CustomerController {
             String customerId = customer.getCustomerId();
             Link selfLink = linkTo(CustomerController.class).slash(customerId).withSelfRel();
             customer.add(selfLink);
-//            if (orderService.getAllOrdersForCustomer(customerId).size() > 0) {
             List<Order> allOrdersForCustomer = orderService.getAllOrdersForCustomer(customerId);
             if (!allOrdersForCustomer.isEmpty()) {
                 List<Order> methodLinkBuilder = methodOn(CustomerController.class).getOrdersForCustomer(customerId);
