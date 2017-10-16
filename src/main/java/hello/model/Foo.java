@@ -1,8 +1,11 @@
 package hello.model;
 
+import lombok.Data;
+
 import javax.validation.constraints.Size;
 import java.io.Serializable;
 
+@Data
 public class Foo implements Serializable {
 
     private long id;
@@ -22,7 +25,7 @@ public class Foo implements Serializable {
 
     // API
 
-    public long getId() {
+  /*  public long getId() {
         return id;
     }
 
@@ -70,6 +73,6 @@ public class Foo implements Serializable {
         final StringBuilder builder = new StringBuilder();
         builder.append("Foo [name=").append(name).append("]");
         return builder.toString();
-    }
+    }*/
 
 }

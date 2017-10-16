@@ -1,5 +1,6 @@
-package hello;
+package hello.controller;
 
+import hello.model.Greeting;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,13 +27,4 @@ public class GreetingController {
         return new ResponseEntity<>(greeting, HttpStatus.OK);
     }
 
-    /*@RequestMapping(value = "/greeting", method = RequestMethod.GET)
-    public HttpEntity<Greeting> greeting(
-            @RequestParam(value = "name", required = false, defaultValue = "World") String name) {
-
-        Greeting greeting = new Greeting(String.format(TEMPLATE, name));
-        greeting.add(linkTo(methodOn(GreetingController.class).greeting(name)).withSelfRel());
-
-        return new ResponseEntity<>(greeting, HttpStatus.OK);
-    }*/
 }
