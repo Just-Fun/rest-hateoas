@@ -1,7 +1,7 @@
-package hello.service;
+package com.serzh.service;
 
-import hello.model.Customer;
-import hello.model.Order;
+import com.serzh.model.Customer;
+import com.serzh.model.Order;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

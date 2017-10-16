@@ -1,6 +1,6 @@
-package hello.controller;
+package com.serzh.controller;
 
-import hello.model.Greeting;
+import com.serzh.model.Greeting;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

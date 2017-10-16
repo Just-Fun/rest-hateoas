@@ -1,7 +1,7 @@
-package hello.service;
+package com.serzh.service;
 
 
-import hello.model.Order;
+import com.serzh.model.Order;
 
 import java.util.List;
 

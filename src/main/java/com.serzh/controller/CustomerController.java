@@ -1,9 +1,9 @@
-package hello.controller;
+package com.serzh.controller;
 
-import hello.model.Customer;
-import hello.model.Order;
-import hello.service.CustomerService;
-import hello.service.OrderService;
+import com.serzh.model.Customer;
+import com.serzh.model.Order;
+import com.serzh.service.CustomerService;
+import com.serzh.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.Link;
 import org.springframework.web.bind.annotation.PathVariable;

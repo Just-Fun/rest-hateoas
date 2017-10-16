@@ -1,7 +1,6 @@
-package hello.service;
+package com.serzh.service;
 
-
-import hello.model.Customer;
+import com.serzh.model.Customer;
 
 import java.util.List;
 

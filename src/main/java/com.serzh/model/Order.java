@@ -1,4 +1,4 @@
-package hello.model;
+package com.serzh.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

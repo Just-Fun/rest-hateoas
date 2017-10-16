@@ -1,4 +1,4 @@
-package hello.model;
+package com.serzh.model;
 
 import org.springframework.hateoas.ResourceSupport;
 
